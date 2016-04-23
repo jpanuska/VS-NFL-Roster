@@ -29,8 +29,8 @@ function ready(dataStore){
             '<img src="'+player.photo+'" />' + 
             '<br>' + '<br>' + 
             '<span> playername:' + player.fullname + '</span><br>' +
-            '<span> position:' + player.postion + '</span><br>' +
-            '<span> number:' + player.num + '</span>' +
+            '<span> position:' + player.position + '</span><br>' +
+            '<span> number:' + player.jersey + '</span>' +
             '</div>'
         
         
