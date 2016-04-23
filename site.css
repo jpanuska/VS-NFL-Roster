@@ -1,9 +1,35 @@
-.header{
+.panel{
     
+    color: red;
+    background-color: lightgrey;
+   
+  
+}
+
+.panel-heading{
+    text-align:center
+    
+    
+}
+
+.player-roster{
+ 
+ text-align: left;   
+    
+    
+}
+
+.player-form{
+    
+    color: blue;
+    text-align: left;
     
 } 
 
-.container{
+.player-card {
     
+   display: inline-block;
+   border: 1px solid black;
+   text-align: left; 
     
 }
