@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>VS NFL Roster Document</title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
 
     <link rel="stylesheet" href="site.css">
 
@@ -18,53 +18,58 @@
                 <div class="col-sm-12">
                     <div class="panel-heading">
                         <h3>My NFL Roster</h3>
-                        <div class="panel-body">      
-                                    <div class="player-roster">
-                                        <div class="player-card">
-                                            <img src="http://s.nflcdn.com/static/content/public/image/fantasy/transparent/200x200/" />
-                                            <br>
-                                            <span> playername</span><br>
-                                            <span> position</span><br>
-                                            <span> number</span>
+                        <div class="panel-body">
+                            <div class="player-roster">
+                                <div class="player-card">
+                                    <img src="http://s.nflcdn.com/static/content/public/image/fantasy/transparent/200x200/" />
+                                    <br>
+                                    <span> playername</span><br>
+                                    <span> position</span><br>
+                                    <span> number</span>
 
+                                </div>
+                            </div>
+                            <div class="player-form">
+                                <form action="submit">
+                                    <div class="form-group">
+                                        <label for=" name" class="col-sm-5 control-label">Name</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="name" placeholder="Name">
                                         </div>
                                     </div>
-                            <div class="player-form">
-                                    <form action="submit">
-                                        <div class="form-group">
-                                            <label for=" name" class="col-sm-3 control-label">Name</label>
-                                            <div class="col-sm-9">
-                                                <input type="text" class="form-control" id="name" placeholder="Name">
-                                            </div>
+
+                                    <div class="form-group">
+                                        <label for="position" class="col-sm-5 control-label">Position</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="position" placeholder="Position">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="number" class="col-sm-5 control-label">Number</label>
+                                        <div class="col-sm-9">
+                                            <input type="number" class="form-control" id="number" placeholder="Number">
                                         </div>
 
-                                        <div class="form-group">
-                                            <label for="position" class="col-sm-3 control-label">Position</label>
-                                            <div class="col-sm-9">
-                                                <input type="text" class="form-control" id="position" placeholder="Position">
-                                            </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-sm-offset-2 col-sm-10">
+                                            <button type="submit" class="btn btn-success">Add Player</button>
                                         </div>
-
-                                        <div class="form-group">
-                                            <label for="number" class="col-sm-3 control-label">Number</label>
-                                            <div class="col-sm-9">
-                                                <input type="number" class="form-control" id="number" placeholder="Number">
-                                            </div>
-
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="col-sm-offset-2 col-sm-10">
-                                                <button type="submit" class="btn btn-success">Add Player</button>
-                                            </div>
-                                        </div>
-                                    </form>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+            <input type="text" id="query">
+            <button>Find</button>
+            <button class="clear-filter-button">Clear Filter</button>
+            <div class="roster">
 
+            </div>
+        </div>
 
     </div>
 
@@ -75,6 +80,8 @@
     <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="app.js"></script>
+    <script src="player-service.js"></script>
+    <script src="roster-controller.js"></script>
 
 </body>
 

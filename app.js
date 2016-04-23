@@ -36,7 +36,7 @@ function draw() {
         var current = roster[i];
         $(".player-roster").append(
             '<div class="player-card "> ' +
-            '<button>Remove</button>' +'<br>' +
+            '<button class="btn btn-danger">Remove</button>' +'<br>' +
             '<img src="http://s.nflcdn.com/static/content/public/image/fantasy/transparent/200x200/" />' + 
             '<br>' + '<br>' + 
             '<span> playername:' + current.playerName + '</span><br>' +
@@ -47,7 +47,11 @@ function draw() {
     }
 }
 
-$("player-roster").on("click",function)
+$(".player-roster").on("click",".btn",function(){
+    $(this).closest($(".player-card")).remove()
+roster.splice($(this).id,1)
+console.log("button OK")
+console.log(roster)
 
-
+})
 

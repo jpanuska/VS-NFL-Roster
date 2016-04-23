@@ -1,13 +1,13 @@
 .panel{
     
-    color: red;
+    color: black;
     background-color: lightgrey;
    
   
 }
 
 .panel-heading{
-    text-align:center
+    text-align:left;
     
     
 }
